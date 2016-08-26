@@ -18,7 +18,7 @@ wss.on("connection", function(ws) {
   var id = setInterval(function() {
   //  ws.send(ws.onmessage);
   //  ws.send(JSON.stringify(new Date()), function() {  })
-  ws.send("selam", function() {  })
+  ws.send(JSON.stringify("selam"), function() {  })
   }, 1000)
 
   console.log("websocket connection open")
