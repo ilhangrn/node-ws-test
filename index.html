@@ -22,7 +22,7 @@
       var ws = new WebSocket(host);
       ws.onmessage = function (event) {
         //--------------------------------------------
-        alert(event.data); 
+        // alert(event.data); 
         //---------------------------------------------
         var li = document.createElement('li');
         li.innerHTML = JSON.parse(event.data);
